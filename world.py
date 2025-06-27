@@ -9,8 +9,8 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 # Connect to Taiko RPC
-taiko_rpc_url = "https://worldchain.drpc.org"
-web3 = Web3(Web3.HTTPProvider(taiko_rpc_url))
+world_rpc_url = "https://worldchain.drpc.org"
+web3 = Web3(Web3.HTTPProvider(world_rpc_url))
 
 # Check network connection
 if not web3.is_connected():
