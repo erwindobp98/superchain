@@ -9,8 +9,8 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 # Connect to Taiko RPC
-taiko_rpc_url = "https://base.llamarpc.com"
-web3 = Web3(Web3.HTTPProvider(taiko_rpc_url))
+base_rpc_url = "https://base.llamarpc.com"
+web3 = Web3(Web3.HTTPProvider(base_rpc_url))
 
 # Check network connection
 if not web3.is_connected():
